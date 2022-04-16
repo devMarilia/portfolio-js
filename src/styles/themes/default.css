@@ -1,0 +1,62 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #FFF;
+  --primary-background: rgb(197, 56, 56);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+	margin: 3rem 0 0 0;
+	font-size: 0.938rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+/* REUSABLE CSS CLASSES ============================ */
+.section {
+	padding: 4.5rem 0 2rem;
+}
+
+.section-title {
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 1.5rem;
+	font-weight: 600;
+}
+
+.home,
+.sobre,
+.projects,
+.contact {
+	height: 100vh;
+}
+
+/* LAYOUT =============================== */
+.container {
+	max-width: 968px;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+h1 {
+  font-size: 24px;
+  color: var(--secondary-color);
+  font-weight: 400;
+}
+h2 {
+  font-size: 14px;
+}
