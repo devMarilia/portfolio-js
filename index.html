@@ -6,10 +6,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/styles/themes/default.css">
   <link rel="stylesheet" href="src/styles/themes/common.css">
+  <link rel="stylesheet" href="src/styles/themes/header.css">
+  		<!-- BOXICONS =================================== -->
+      <link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+		/>
   
   <title>Portfolio-JS</title>
 </head>
 <body>
-  <h1>teste</h1>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">devLia</a>
+
+      <div class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+
+          <div class="nav-close" id="nav-close"><i class="bx bx-x"></i></div>
+        </ul>
+      </div>
+
+      <div class="nav-open" id="nav-open"><i class="bx bx-grid-alt"></i></div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="section home" id="home">
+      <div class="container home-container">
+        <div class="home-data">
+          <h3>Responsive</h3>
+          <h1>Site<br />portifolio<br />Lia<h1>
+        </div>
+      </div>
+    </section>
+
+          <section class="section about" id="about">
+              <div class="container about-container">
+                  <h2 class="section-title">About</h2>
+              </div>
+          </section>
+
+          <section class="section projects" id="projects">
+              <div class="container projects-container">
+                  <h2 class="section-title">Projects</h2>
+              </div>
+          </section>
+
+          <section class="section contact" id="contact">
+              <div class="container contact-container">
+                  <h2 class="section-title">Contact</h2>
+              </div>
+          </section>
+  </main>
+  <script src="./src/main.js"></script>
 </body>
 </html>
