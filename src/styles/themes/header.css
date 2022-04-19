@@ -1,141 +1,90 @@
-/* HEADER SECTION ========================== */
-.header {
-  width: 100%;
-  z-index: 9999;
-  background: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
-  transition: all 0.3s;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* > * {
+    font-family: "Poppins", cursive;
 }
 
-.nav {
-  height: 6rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* variables */
+body{
+    --text-light: rgba(243, 244, 246,0.9);
+    --primary-dark: rgba(55, 65, 81, 1);
+    --secondary-dark: rgba(55, 65, 81, 0.7);
+    --bg-light: rgba(243, 244, 246,0.3);
+    --bg-btn: rgba(67, 56, 202, 0.8);
+
+    /* css style */
+    background-color: var(--text-light);
 }
 
-.logo,
-.nav-open {
-  color: #000;
-  font-weight: 500;
-  transition: 0.3s;
-  font-size: var(--font-logo);
+body.dark{
+    --text-light : rgba(55, 65, 81, 1);
+    --primary-dark:rgba(243, 244, 246,1);
+    --secondary-dark: rgba(243, 244, 246,0.3);
+    --bg-btn: rgba(219, 233, 29, 0.897);
+    --bg-light: rgba(45, 49, 54, 0.5);
 }
 
-.logo:hover,
-.nav-open:hover {
-  color: var(--color-style-decoration);
+
+
+.dark{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end; 
 }
 
-.nav-open {
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-@media screen and (max-width: 767px) {
-  .main-nav {
-    position: fixed;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    padding: 3.5rem 0 1.5rem;
-    text-align: center;
-    background: #000;
-    transition: 0.4s;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-    z-index: 99999;
-  }
+
+
+.grid .icon > span{
+    font-size: 4em;
+    color: var(--bg-btn);
 }
 
-.nav-item {
-  margin-bottom: 1.5rem;
+.primary-dark{
+    color: var(--primary-dark);
+    border:red;
 }
 
-.nav-link {
-  font-size: 1.3rem;
-  color: var(--color-light-grey);
-  font-weight: 400;
-  transition: 0.3s;
+.secondary-dark{
+    color: var(--secondary-dark);
 }
 
-.nav-link:hover {
-  /* color: var(--secondary-color); */
-  font-weight: 500;
+.bg-light{
+    background-color: var(--bg-light);
+    box-shadow: 1px 5px 20px rgba(55, 65, 81, 0.1);
 }
 
-.nav-close {
-  color: var(--secondary-color);
-  position: absolute;
-  top: 0.4rem;
-  right: 1.115rem;
-  font-size: 1.7rem;
-  cursor: pointer;
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    position: relative;
+    width: 70px;
+    height: 30px;
+    border-radius: 45px;
+    outline: none;
+    border: solid 1px var(--secondary-dark);
+    background-size: cover;
+    margin-top: -4px;
 }
 
-.show-menu {
-  top: 0;
-}
-
-/* Active Link ============================== */
-.active-link {
-  position: relative;
-  font-weight: 500;
-}
-
-.active-link::before {
+input[type="checkbox"]::before{
   content: "";
   position: absolute;
-  bottom: -0.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 5px;
-  background: var(--color-style-decoration);
-  border-radius: 50px;
+  top: 0px;
+  left: 0;
+  height: 28px;
+  width: 28px;
+  background-color: var(--primary-dark);
+  border-radius: 45px;
+    
 }
 
-/* CHANGE THE BACKGROUND ON SCROLL ==================== */
-.scroll-header {
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  background: var(--secondary-color);
+input[type="checkbox"]:checked:before{
+    transform: translate(100%);
+    left: 12px;
 }
 
-/* HOME SECTION ======================== */
-.home-data {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 7rem;
-}
-
-.home-data h3 {
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #ce0f0f;
-  text-transform: uppercase;
-}
-
-.home-data h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  line-height: 3.5rem;
-  text-transform: uppercase;
-}
-
-@media screen and (min-width: 576px) {
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .home-data h3 {
-    font-size: 1.3rem;
-  }
-
-  .home-data h1 {
-    font-size: 4rem;
-    line-height: 5rem;
-  }
+input[type="checkbox"]:checked{
+    border: solid 1px var(--primary-dark);
 }
