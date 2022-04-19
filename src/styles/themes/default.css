@@ -1,11 +1,11 @@
 :root {
-  --primary-color: #000;
-  --secondary-color: #FFF;
-  --primary-background: rgb(29, 27, 27);
+  /* --primary-color: #edf2f2;
+  --secondary-color: rgb(29, 27, 27); */
 	--font-logo: 1.5rem;
-	--color-style-decoration: #1C1C1C;
-	--color-light-grey:#a5a5a5;
+	/* --color-style-decoration: #1C1C1C;
+	--color-light-grey:#a5a5a5; */
 }
+
 * {
 	margin: 0;
 	padding: 0;
@@ -23,11 +23,5 @@ body {
 	font-size: 0.938rem;
 }
 
-a {
-	text-decoration: none;
-}
 
-ul {
-	list-style: none;
-}
 
