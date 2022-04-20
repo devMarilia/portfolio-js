@@ -5,6 +5,10 @@
     font-family: "Poppins", cursive;
 }
 
+body {
+    margin: 0;
+}
+
 /* variables */
 body{
     --text-light: rgba(243, 244, 246,0.9);
@@ -26,12 +30,17 @@ body.dark{
 }
 
 
+ul {
+	text-decoration: none;
+}
+
 
 .dark{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     align-items: flex-end; 
+    position: absolute;
+    bottom: 1.8rem;
+    left: 8px;
 }
 
 
@@ -87,4 +96,111 @@ input[type="checkbox"]:checked:before{
 
 input[type="checkbox"]:checked{
     border: solid 1px var(--primary-dark);
+}
+
+.barra{
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+    top: o;
+    left: 0;
+    background-color: #211B28;
+    border-right: 2px solid #05a782;
+}
+.nav-logo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.8rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #05a782;
+    text-align: center;
+    margin: auto;
+}
+.nav-logo-text{
+    font-size: 1.125rem;
+    color: #ffffff;
+    font-weight: 100;
+    line-height: 50px;
+}
+.nav-menu{
+    position: fixed;
+    transform: rotate(-90deg) translateX(-100%);
+    transform-origin: left top;
+    width: 111vh;
+}
+.menu{
+    display: flex;
+}
+.nav-link ul {
+    text-decoration: none;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: -2px auto 0 auto;
+    text-decoration: none;
+}
+.nav-link{
+    float: right;
+    height: 100%;
+    line-height: 100px;
+    padding: 0 0.5rem;
+    color: #ffffff;
+    font-weight: ;
+    position: relative;
+    transition: .4s;
+}
+
+
+.nav-link.link-ativo, .nav-link:hover{
+    color: #05a782;
+}
+.nav-link.link-ativo::after, .nav-link:hover::after{
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #05a782;
+    border-radius: 50%;
+    bottom: 1.8rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*main*/
+.main{
+    margin-left: 100px;
+}
+.home-img{
+    width: 559px;
+    height: 758px;
+}
+.container{
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid{
+    display: grid;
+}
+.home-img{
+    display: none;
+}
+.home{
+    background: ;
+    background-color: cover;
+    background-position: center center;
+    height: 100vh;
+}
+.home-container {
+    position: relative;
+    height: 100%;
+    align-items: center;
+}
+.home-social{
+
 }
