@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modes</title>
+    <title>devLia</title>
+    <link rel="shortcut icon" href="src/images/icons8-lua-cheia-96.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
-      <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="./src/styles/themes/header.css">
+    
+    <link rel="stylesheet" href="./src/styles/themes/commom.css">
+    <link rel="stylesheet" href="./src/styles/themes/default.css">
+    <link rel="stylesheet" href="src/styles/themes/home.css">
 </head>
 <body>
-    <aside class="barra" id="barra">
+    <!--Menu-->
+    <aside class="sidebar " id="sidebar" >
         <nav class= "nav">
             <div class="nav-logo">
                 <a href="index.html" class="nav-logo-text">dLia</a>
@@ -43,47 +50,104 @@
                     
                     </div>
                 </div>
-                <div class="dark">
-                    <input type="checkbox" id="mode">
-                </div>
             </div>
-           
+       
         </nav>
     </aside>
-    <!-- Main -->
+    
     <main class="main">
-        <section class="about section" id="about">
-            <h2  data-heading="My Intro" class="section__title">About</h2>
-            <div class="about__container grid">
-                <img src="src/assets/images/about-img.jpg" alt="photo" class="about__img"/>
-
-                <div class="about__data">
-                    <h3 class="about__heading">Hi, I'm Lia Augusta, Brasileira</h3>
-                    <p class="about__descripton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos quod delectus rerum nobis cupiditate distinctio</p>
-                    <div class="about__info">
-                        <div class="about__box">
-                            <i class='bx bx-briefcase alt about__icon'></i>
-                            <h3 class="about__title">Experience</h3>
-                            <span class="about__subtitle">4 + Years</span>
-                        </div>
-
-                        <div class="about__box">
-                            <i class='bx bx-headphone about alt about__icon'></i>
-                            <h3 class="about__title">Completed</h3>
-                            <span class="about__subtitle">72 + projects</span>
-                        </div>
-
-                        <div class="about__box">
-                            <i class='bx bxs-award bx-flip-horizontal alt about__icon' ></i>
-                            <h3 class="about__title">Supprt</h3>
-                            <span class="about__subtitle">Online 24/7</span>
-                        </div>
+        <!--Home-->
+        
+        <section class="home" id="home">
+            <div class="home-container container-grid">
+                <div class="test">
+                    <div class="dark">
+                        <input type="checkbox" id="mode">
                     </div>
-                    <a href="contact" class="button"><i class='bx bx-navigation button__icon'></i>Contact Me</a>
+                </div>
+                <div class="home-social">
+                    <span class="home-social-follow">Follow Me</span>
+                    
+                        <div class="home-social-links">
+                            <a href="http://www.instagram.com/" target="_blank" class="home-social-links">
+                                <i class="uil uil-instagram"></i></a>
+                            <a href="http://www.linkedin.com/" target="_blank" class="home-social-links">
+                                <i class="uil uil-linkedin"></i>
+                            </a>
+                            <a href="http://www.github.com/" target="_blank" class="home-social-links">
+                                <i class="uil uil-github"></i>
+                            </a>
+                        
+                
+                    </div>
+                 
+                    <div class="home-page">
+                        
+                        <!-- <img src="" alt="" class="home-img"> -->
+                    <div class="home-data">
+                        <h1 class="home-titulo">Hi, I'am dev</h1>
+                        <h3 class="home-subtitulo">Frontend developer</h3>
+                        <p class="home-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum error voluptas sapiente, asperiores delectus nobis cupiditate laudantium possimus ipsam! Labore sapiente molestias fuga expedita quod aspernatur natus nobis et culpa!</p>
+                        <a href="#about" class="button">
+                            <i class="uil uil-user button-icon"></i>More About Me</a>
+
+                    </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- About -->
+        <section class="about-section" id="about">
+        <h2 data-heading="My-intro" class="section-titulo">About Me</h2>
+        <div class="about_container cntainer grid">
+            <img src="" alt="" class="about-img">
+            <div class="about-data">
+                <h3 class="about-heading">Olá, eu sou Franciele Fernandes</h3>
+                <p class="about-descricao">Desenvolvedora Web, tenho 22 anos, atualmente estou focando em front-end e venho sempre buscando aperfeiçoar meus conhecimentos em HTML, CSS e JavaScript.</p>
+                <div class="about-info">
+                    <div class="about-box">
+                        <i class="uil uil-award about-icon"></i>
+                        <h3 class="about-titulo">Experiência</h3>
+                        <span class="about-subtitulo"></span>
+                    </div>
+                    
+                    <div class="about-box">
+                        <i class="uil uil-suitcase about-icon"></i>
+                        <h3 class="about-titulo"></h3>
+                        <span class="about-subtitulo"></span>
+                    </div> 
+
+                    <div class="about-box">
+                        <i class="uil uil-books about-icon"></i>
+                        <h3 class="about-titulo">Ensino</h3>
+                        <span class="about-subtitulo"></span>
+                    </div> 
+                </div>
+
+            </div>
+
+        </div>
+
+        </section>
+        <!-- Skills -->
+        <section class="skills section" id="skills">
+            <h2 data-heading="My Abilities" class="section_title">Minhas Experiências</h2>
+            <div class="skills_container container grid">
+                <div class="skills_tabs">
+                    <div class="skills_header">
+                    <i class="uil uil-brackets-curly skills_icon"></i>
+                    <div>
+                     <h1 class="skills_title"></h1>
+                     <span class="skills_subtitle"></span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+                
+        </section>
     </main>
+
+
     <script src="./src/main.js"></script>
 </body>
 </html>

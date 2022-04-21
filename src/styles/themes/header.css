@@ -5,20 +5,18 @@
     font-family: "Poppins", cursive;
 }
 
-body {
-    margin: 0;
-}
+
 
 /* variables */
 body{
-    --text-light: rgba(243, 244, 246,0.9);
-    --primary-dark: rgba(55, 65, 81, 1);
+    --text-dark: #000;
+    --primary-dark: rgb(204, 217, 238);
     --secondary-dark: rgba(55, 65, 81, 0.7);
     --bg-light: rgba(243, 244, 246,0.3);
     --bg-btn: rgba(67, 56, 202, 0.8);
 
     /* css style */
-    background-color: var(--text-light);
+    background-color: var(--primary-dark);
 }
 
 body.dark{
@@ -27,14 +25,13 @@ body.dark{
     --secondary-dark: rgba(243, 244, 246,0.3);
     --bg-btn: rgba(219, 233, 29, 0.897);
     --bg-light: rgba(45, 49, 54, 0.5);
+    --test: #211B28;
 }
 
+
 .dark{
-    display: flex;
-    align-items: flex-end; 
     position: absolute;
-    bottom: 1.8rem;
-    left: 8px;
+    background-color: var(--test);
 }
 
 
@@ -46,7 +43,6 @@ body.dark{
 
 .primary-dark{
     color: var(--primary-dark);
-    border:red;
 }
 
 .secondary-dark{
@@ -68,7 +64,7 @@ input[type="checkbox"]{
     outline: none;
     border: solid 1px var(--secondary-dark);
     background-size: cover;
-    margin-top: -4px;
+    margin-top: 10px;
 }
 
 input[type="checkbox"]::before{
@@ -78,7 +74,7 @@ input[type="checkbox"]::before{
   left: 0;
   height: 28px;
   width: 28px;
-  background-color: var(--primary-dark);
+  background-color: #fff;
   border-radius: 45px;
     
 }
@@ -92,14 +88,14 @@ input[type="checkbox"]:checked{
     border: solid 1px var(--primary-dark);
 }
 
-.barra{
+.sidebar{
     position: fixed;
     width: 100px;
     height: 100vh;
     top: 0;
     left: 0;
     background-color: #211B28;
-    border-right: 2px solid #05a782;
+    border-right: 2px solid var(--skin-color);
 }
 .nav-logo{
     position: absolute;
@@ -109,7 +105,7 @@ input[type="checkbox"]:checked{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #05a782;
+    background-color: var(--skin-color);
     text-align: center;
     margin: auto;
 }
@@ -140,7 +136,7 @@ input[type="checkbox"]:checked{
     height: 100%;
     line-height: 100px;
     padding: 0 0.5rem;
-    color: #ffffff;
+    color: var(--primary-color);
     font-weight: ;
     position: relative;
     transition: .4s;
@@ -148,14 +144,14 @@ input[type="checkbox"]:checked{
 
 
 .nav-link.link-ativo, .nav-link:hover{
-    color: #05a782;
+    color: var(--primary-color)
 }
 .nav-link.link-ativo::after, .nav-link:hover::after{
     position: absolute;
     content: '';
     width: 6px;
     height: 6px;
-    background-color: #05a782;
+    background-color: var(--skin-color);
     border-radius: 50%;
     bottom: 1.8rem;
     left: 0;
