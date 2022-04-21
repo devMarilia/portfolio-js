@@ -1,10 +1,79 @@
 :root {
-  /* --primary-color: #edf2f2;
-  --secondary-color: rgb(29, 27, 27); */
+   --primary-color: #6aebeb;
+   --secondary-color: rgb(29, 27, 27); 
 	--font-logo: 1.5rem;
 	/* --color-style-decoration: #1C1C1C;
 	--color-light-grey:#a5a5a5; */
+
+	  /*===== Colors =====*/
+    --hue-color:242;
+
+    /* HSL Color Mode */
+    --skin-color: hsl(342, 63%, 67%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 85%);
+    --body-color: hsl(var(--hue-color), 19%, 5%);
+    --box-color: hsl(var(--hue-color), 14%, 10%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
+
+    /*===== Font and Typography =====*/
+    --body-font: 'Poppins', sans-serif;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --biggest-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+
+    /*===== Font Weight =====*/
+    --font-medium: 500;
+    --font-bold: 600;
+
+    /*===== Margenes Bottom =====*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*===== Z Index =====*/
+    --z-fixed: 10;
+    --z-modal: 100;
 }
+/*=============== BASE ===============*/
+
+html {
+	scroll-behavior: smooth;
+
+}
+
+body,
+input,
+button {
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+}
+
+/* Responsive Typography */
+@media screen and (max-width: 1024px) {
+	:root {
+			--biggest-font-size: 2rem;
+			--h1-font-size: 1.5rem;
+			--h2-font-size: 1.25rem;
+			--h3-font-size: 1.125rem;
+			--normal-font-size: .938rem;
+			--small-font-size: .813rem;
+			--smaller-font-size: .75rem;
+	}
+}
+
 
 * {
 	margin: 0;
@@ -13,13 +82,22 @@
 	box-sizing: border-box;
 }
 
-html {
-	scroll-behavior: smooth;
+
+
+a {
+	text-decoration: none;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+button {
+	cursor: pointer;
+}
 body {
-  font-family: 'Roboto', sans-serif;
-	font-size: 0.938rem;
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
 	margin: 0;
 }
 

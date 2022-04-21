@@ -6,3 +6,7 @@
 body {
 	background-color: var(--primary-background);
 }
+section {
+	padding: 0.6rem 2rem;
+	background-color: var( --primary-color)
+}
