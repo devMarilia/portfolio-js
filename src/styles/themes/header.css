@@ -29,12 +29,6 @@ body.dark{
     --bg-light: rgba(45, 49, 54, 0.5);
 }
 
-
-ul {
-	text-decoration: none;
-}
-
-
 .dark{
     display: flex;
     align-items: flex-end; 
@@ -102,7 +96,7 @@ input[type="checkbox"]:checked{
     position: fixed;
     width: 100px;
     height: 100vh;
-    top: o;
+    top: 0;
     left: 0;
     background-color: #211B28;
     border-right: 2px solid #05a782;
@@ -134,14 +128,12 @@ input[type="checkbox"]:checked{
 .menu{
     display: flex;
 }
-.nav-link ul {
-    text-decoration: none;
-}
+
 .nav-list{
     display: flex;
     flex-direction: row-reverse;
     margin: -2px auto 0 auto;
-    text-decoration: none;
+    list-style:  none;
 }
 .nav-link{
     float: right;
