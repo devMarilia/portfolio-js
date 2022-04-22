@@ -30,7 +30,6 @@ body.dark{
 
 
 .dark{
-    position: absolute;
     background-color: var(--test);
 }
 
@@ -64,7 +63,10 @@ input[type="checkbox"]{
     outline: none;
     border: solid 1px var(--secondary-dark);
     background-size: cover;
-    margin-top: 10px;
+    margin-top: -35px;
+    transform: rotate(
+-90deg
+) translateX(-100%);
 }
 
 input[type="checkbox"]::before{
@@ -174,21 +176,4 @@ input[type="checkbox"]:checked{
 }
 .grid{
     display: grid;
-}
-.home-img{
-    display: none;
-}
-.home{
-    background: ;
-    background-color: cover;
-    background-position: center center;
-    height: 100vh;
-}
-.home-container {
-    position: relative;
-    height: 100%;
-    align-items: center;
-}
-.home-social{
-
 }

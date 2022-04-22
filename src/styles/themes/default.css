@@ -100,7 +100,10 @@ body {
 	font-size: var(--normal-font-size);
 	margin: 0;
 }
-
+/*  Latout */
+.container{
+   max-width: 1250px;
+}
 
 
 
