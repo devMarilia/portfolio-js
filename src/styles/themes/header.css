@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 * > * {
     font-family: "Poppins", cursive;
@@ -138,7 +137,7 @@ input[type="checkbox"]:checked{
     height: 100%;
     line-height: 100px;
     padding: 0 0.5rem;
-    color: var(--primary-color);
+    color: #414141;
     font-weight: ;
     position: relative;
     transition: .4s;
@@ -146,7 +145,7 @@ input[type="checkbox"]:checked{
 
 
 .nav-link.link-ativo, .nav-link:hover{
-    color: var(--primary-color)
+    color: var(--skin-color);
 }
 .nav-link.link-ativo::after, .nav-link:hover::after{
     position: absolute;
