@@ -1,0 +1,44 @@
+.content-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.experience {
+  padding: 10px;
+}
+.content-flex h3 {
+  color: var(--skill-color);
+}
+.content-qualification{
+  display: flex;
+  gap: 10px
+}
+.content-flex .content-qualification i {
+  color: var( --white-color);
+}
+
+
+@media (max-width: 769px) {
+  .content-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-qualification {
+    text-align: center;
+    align-items: center;
+    display: revert;
+    padding: 10px;
+  }
+}
+@media (max-width: 479px) {
+  .container .content .column-left img {
+    height: 200px;
+    width: 200px;
+  }
+  .descrition {
+    font-size: var(--mb-0-5);
+  }
+  .descrition-text {
+    text-align: center;
+  }
+}

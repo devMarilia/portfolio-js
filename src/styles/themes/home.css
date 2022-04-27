@@ -1,3 +1,6 @@
+section .home{
+  max-width: 1250px;
+}
 .home-img{
   width: 559px;
   height: 758px;
@@ -59,116 +62,119 @@
 }
 .hero {
     background-color: rgb(227, 238, 252);
-    background: url(../../assets//images//home-img.png);
+    background: url(../../assets//images/lisa.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 50%;
-    background-color: #cccccc;
+  border-bottom: #ea337f;
 
-  }
-  .hero-container {
-    min-height: 95.5vh;
-    padding:  0.5rem;
-    max-width: 990px;
-    margin: 0 auto;
-    position: relative;
+}
+.hero-container {
+  min-height: 95.5vh;
+  padding:  0.5rem;
+  max-width: 990px;
+  margin: 0 auto;
+  position: relative;
 
-    background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.hero-content {
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hero-header, .hero-subheader {
+  font-weight: 300;
+}
+.hero-header {
+  font-size: 47.25px;
+  margin-bottom: 20px;
+}
+.hero-subheader {
+  font-size: 21px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+.try-business {
+  margin: 30px 0 0 0;  
+}
+.try-business-button {
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 19px 26px;
+  color: #fff;
+  background-color: var(--skin-color);
+}
+.try-business-button:hover {
+  background-color: #ea337f;
+}
+.try-business-footer {
+  display: block;
+  font-size: 16px;
+  margin-top: 15px;
+}
+.try-business-footer a {
+  text-decoration: none;
+  color: #ea337f;
+  border-bottom: 1px solid #ea337f;
+}
+@media (max-width: 767px) {
+.hero  {
+  background-size: cover;
+  background-position: 700px center;
+}
+.hero-container {
+  min-height: 350px;
+  padding: 45px 20px;
+}
+.hero-header {
+  font-size: 31px;
+  margin-bottom: 20px;
+}
+.hero-subheader {
+  font-size: 16px;
+}
+.try-business-button {
+  padding: 16px 40px;
+  font-size: 16px;
+}
+.try-business {
+  margin: 0;
+}
+.home-social-links {
+  margin-top: 0;
+  align-items: center;
+}
+.about-content{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}  
+@media (max-width: 479px) {
+  .hero {
+    background-image: none;
   }
   .hero-content {
-    max-width: 450px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .hero-header, .hero-subheader {
-    font-weight: 300;
+    right: 10px;
+    left: 10px;
   }
   .hero-header {
-    font-size: 47.25px;
-    margin-bottom: 20px;
+    font-size: 20px;
   }
-  .hero-subheader {
-    font-size: 21px;
-    padding-bottom: 20px;
-    margin-bottom: 0;
+  .hero-header, .hero-subheader {
+    text-align: center;
   }
   .try-business {
-    margin: 30px 0 0 0;  
+    text-align: center;
   }
   .try-business-button {
-    display: inline-block;
-    border-radius: 5px;
-    font-size: 21px;
-    text-decoration: none;
-    padding: 19px 26px;
-    color: #fff;
-    background-color: var(--skin-color);
-  }
-  .try-business-button:hover {
-    background-color: #ea337f;
-  }
-  .try-business-footer {
-    display: block;
+    padding: 13px 20px;
     font-size: 16px;
-    margin-top: 15px;
   }
-  .try-business-footer a {
-    text-decoration: none;
-    color: #ea337f;
-    border-bottom: 1px solid #ea337f;
-  }
-  @media (max-width: 767px) {
-    .hero {
-      background-size: cover;
-      background-position: 700px center;
-    }
-    .hero-container {
-      min-height: 350px;
-      padding: 45px 20px;
-    }
-    .hero-header {
-      font-size: 31px;
-      margin-bottom: 20px;
-    }
-    .hero-subheader {
-      font-size: 16px;
-    }
-    .try-business-button {
-      padding: 16px 40px;
-      font-size: 16px;
-    }
-    .try-business {
-      margin: 0;
-    }
-    .home-social-links {
-      margin-top: 0;
-      align-items: center;
-    }
-  }
-  @media (max-width: 479px) {
-    .hero {
-      background-image: none;
-    }
-    .hero-content {
-      right: 10px;
-      left: 10px;
-    }
-    .hero-header {
-      font-size: 20px;
-    }
-    .hero-header, .hero-subheader {
-      text-align: center;
-    }
-    .try-business {
-      text-align: center;
-    }
-    .try-business-button {
-      padding: 13px 20px;
-      font-size: 16px;
-    }
-  }
+}
