@@ -1,12 +1,36 @@
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+}
+.main-skills {
+  border: solid 1px #414141;
+}
+.side {
+  border: solid 1px #414141;
+}
+.main-skills,
+.side {
+  padding: 2%;
+  border-radius: 10px
+}
+
+@media(max-width: 400px){
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
 .vertical-line{
   height: 300px;
   border-right: 2px solid var(--skill-color);
 }
 
-.container-skills{
-  width: 50%;
-  margin: 0 auto;
-}
 @keyframes load{
   from {
     width: 0%
