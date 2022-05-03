@@ -142,6 +142,29 @@ input[type="checkbox"]:checked{
     position: relative;
     transition: .4s;
 }
+.nav__togle {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    position: fixed;
+    right: 1.5rem;
+    top: 2rem;
+    font-size: 1.2rem;
+    border-radius: .25rem;
+    background-color: var(--skin-color);
+    color: var(--title-color);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.nav__close {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    cursor: pointer;
+    display: none;
+}
 
 
 .nav-link.link-ativo, .nav-link:hover{
@@ -175,4 +198,55 @@ input[type="checkbox"]:checked{
 }
 .grid{
     display: grid;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        margin-left: var(--mb-1-5);
+        margin-right: var(--mb-1-5);
+    }
+    .sidebar {
+        width: 100%;
+        z-index: 999;
+        transform: translateX(-100%);
+    }
+    .show-sidebar {
+        transform: translateX(0);
+    }
+    .nav-logo {
+        display: none;
+    }
+    .nav-menu {
+        height: 100%;
+        width: 100%;
+        transform: rotate(0deg) translateX(0);
+        display: flex;
+        justify-content: center;
+    }
+    .nav-list {
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-link {
+        line-height: 1.5;
+        padding: 1rem 0;
+    }
+    .main {
+        margin-left: 0;
+    }
+    input[type="checkbox"] {
+        display: none;
+    }
+    .nav-link.link-ativo::after, .nav-link:hover::after {
+        bottom: 0;
+    }
+    .nav__close {
+        display: block;
+    }
+    .nav__togle {
+        display: flex;
+    }
 }

@@ -130,7 +130,7 @@ section .home{
   background-position: 700px center;
 }
 .hero-container {
-  min-height: 350px;
+  /* min-height: 350px; */
   padding: 45px 20px;
 }
 .hero-header {
